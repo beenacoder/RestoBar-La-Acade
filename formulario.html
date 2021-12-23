@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pattaya&family=KoHo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Restó-Bar</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu-nav">
+                <a href="index.html">Inicio</a>
+                <a href="#">Ubicación</a>
+                <a href="#">Ordenar</a>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col mt-5 text-center">
+                        <h4 class="text-light fs-1">Datos de Mesa</h4>
+                    </div>
+                </div>
+            <div class="container d-flex justify-content-center">
+                <form id ="formulario" class="mt-5" action="">
+                    <div class="row mt-3">
+                        <div class="col-auto ">
+                            <label for="nombre" class="text-light fs-5 fw-bold mb-1">Nombre del encargado de mesa</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Encargado de mesa">
+                        </div>
+                        <div class="col-3 col-sm-auto">
+                            <label for="mesa" class="text-light fs-5 fw-bold mb-1">Numero de Mesa</label>
+                            <input type="number" class="form-control" id="mesa" name="mesa" placeholder="Numero de mesa">
+                        </div> 
+                        <div class="col-3 col-sm-auto">
+                            <label for="comensales" class="text-light fs-5 fw-bold mb-1">Cantidad de Comensales</label>
+                            <input type="number" class="form-control" id="cantComensales" name="cantComensales" placeholder="Cantidad de Comensales">
+                        </div> 
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-9 col-sm-12 ">
+                            <label for="observaciones" class="text-light fs-5 fw-bold mb-1">Observaciones</label>
+                            <textarea name="observaciones" id="observaciones" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <ul class ="error" id="error"></ul>
+                    <div class="row mt-4 mb-4">
+                        <div class="col-12 text-center">
+                            <input type="submit" value="Pedir Carta" class="btn btn-success">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+        </div>
+        </header>
+
+        
+        <!-- Este es el menu que va a estar escondido hasta que el cliente cargue los datos de la mesa -->
+        <section id="menu-escondido" class="container">
+            <!-- Aqui va el saludo al comensal -->
+            <div class="categorias">
+                <ul class="nav nav-tabs" id="categorias">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="todo" aria-current="page" href="#">Todo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="principales" href="#">Principales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="bebidas" href="#">Bebidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="postres" href="#">Postres</a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+            <div class="row mt-3 menuLista">
+            <!-- Aqui va el menu originado con JS -->
+           </div>
+        
+        </section>
+
+        <!--SECCION CARRITO/COMANDA  -->
+        <section>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+        
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="col-12 order-1 order-md-2">
+                            <h4 class="mb-3 d-flex justify-content-around align-item-center">
+                                <span class="text-muted" id="offcanvasRightLabel">Mi comanda</span>
+                            </h4>
+                            <a href="#" id="EliminarTodo">Eliminar Todo</a>
+                            <ul class="list-group mb-3" id="comandaRender">
+                               <!-- AQUI SE RENDERIZA EL CARRITO -->
+                            </ul>
+                            <div class="list-group-item d-flex justify-content-between bg-success">
+                                <span class="my-0">Total (ARS)</span>
+                                <strong id="total">$0</strong>
+                                <button class="btn btn-danger" id="finalizarPedido">Finalizar pedido</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+        <!-- Scripts locales -->
+        <script src="./js/clases.js"></script>
+        <script src="./js/funciones.js"></script>
+        <script src="./js/funciones-comanda.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+</html>

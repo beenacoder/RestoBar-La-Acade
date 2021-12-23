@@ -1,0 +1,241 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Koho', sans-serif;
+    font-size: 16px;
+    background-color: #ebe7e4;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* -------------------HEADER---------------- */
+
+header .contenedor {
+    position: relative; 
+    height: 780px;
+}
+
+header {
+    width: 100%;
+    background-color: #281a0c;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+header .menu-nav {  
+    width: 100%;
+    text-align: right;
+    /* background-color: #4b3824; */
+    
+}
+
+header .menu-nav a {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 24px 10px;
+    
+}
+
+header .menu-nav a:hover {
+    
+    opacity: 0.5;
+}
+
+header .titulo {
+    color: #fff;
+    
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+
+header .titulo h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 60px;
+}
+
+header .titulo p {
+    font-family: 'Koho', sans-serif;
+    font-size: 22px;
+    width: 50%;
+}
+
+/* --------------MAIN------------ */
+
+
+
+.main1 .presentacion .contenedor {
+    overflow: visible;
+    position: relative;
+}
+
+.main1 .presentacion .foto-perfil {
+    width: 80%;
+    position: absolute;
+    left: 0px;
+    /* top: -280px; */
+    z-index: 1;
+    
+}
+.main1 .presentacion .foto-perfil img {
+    box-shadow: 0px 0px 15px rgba(0,0,0, .5);
+    border-radius: 5px;
+    width: 50%;
+}
+
+.main1 .presentacion .quienes-somos {
+    background: #281a0c;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    top:-50px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0,0,0, .5);
+    float: right;
+    border-radius: 3px;
+}
+
+.main1 .presentacion .quienes-somos h3 {
+    font-size: 30px;    
+    margin-bottom: 40px;
+    color: #fff;
+    font-family: 'Koho', sans-serif;
+    font-weight: 300;
+}
+
+.main1 .presentacion .quienes-somos p {
+    color: #fff;
+    line-height: 28px;
+    margin: 10px;
+    font-family: 'Koho', sans-serif;
+    font-weight: 300;
+}
+
+/* ----------------- Seccion carousel */
+
+/*------------------ Seccion Imagenes de muestra */
+.main .galeria {
+    overflow: hidden;
+}
+.main .galeria .foto {
+	width: 25%;
+	float: left;
+}
+
+.main .galeria .foto img {
+	vertical-align: top;
+	width: 100%;
+	opacity: .7;
+}
+
+.main .galeria .foto img:hover {
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+.error {
+    margin-top: 20px;
+    color:white;
+    background-color: red;
+    border-radius: 5px;
+    display: none;
+}
+
+/* ==================SECCION UBICACION Y HORARIOS PAGINA INDEX */
+ .ubicacion-negocio {
+	padding: 60px 0;
+    color: #000;
+    font-weight: 700;
+}
+
+ .ubicacion-negocio .titulo {
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+ .ubicacion-negocio .direccion {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+ .ubicacion-negocio .horarios {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+
+ .ubicacion-negocio .direccion .calle {
+	margin-bottom: 15px;
+}
+
+ .ubicacion-negocio .horarios {
+	overflow: hidden;
+}
+
+ .ubicacion-negocio .horarios h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ .ubicacion-negocio .horarios .entre-semana,
+ .ubicacion-negocio .horarios .fin-semana {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+
+
+/* ------------------Pagina Menu Escondido------------------*/
+
+ #menu-escondido {
+    display: none;
+}
+
+.pedidos {
+    position: relative;
+    left:auto;
+    margin-left: 5px;
+    display: none;
+    
+}
+
+.imagen {
+    width: 258px;
+    height: 210px;
+    margin: auto;
+}
+
+.card:hover {
+    opacity: 0.7;
+    
+}
+
+.ingredientes {
+    height: 75px;
+}
+
+
+

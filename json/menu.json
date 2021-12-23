@@ -1,0 +1,109 @@
+[
+        {
+            "id":1,
+            "nombre": "Hamburguesa Simple",
+            "imagen": "hamburguesa.png",
+            "ingredientes": "Pan de hamburguesa, Medallon de lomo, jamon, queso, tomate, lechuga",
+            "precio": 350,
+            "categoria": "principales"
+        },
+        {
+            "id":2,
+            "nombre": "Lomito comun",
+            "imagen": "lomito.jpg",
+            "ingredientes": "Pan casero, Medallon de lomo, mayonesa casera, jamon, queso, tomate y lechuga",
+            "precio": 450,
+            "categoria": "principales"
+        },
+        {
+            "id":3,
+            "nombre": "Papas fritas porcion",
+            "imagen": "papas-fritas.jpg",
+            "ingredientes": "Porcion de papas fritas doble fritura con ketchup",
+            "precio": 200,
+            "categoria": "principales"
+        },
+        {
+            "id":4,
+            "nombre": "Pizza comun",
+            "imagen": "pizza-comun.jpg",
+            "ingredientes": "Muzzarella, salsa de tomate, oregano, olivas verdes",
+            "precio": 350,
+            "categoria": "principales"
+        },
+        {
+            "id":5,
+            "nombre": "Pizza especial",
+            "imagen": "pizza-especial.jpg",
+            "ingredientes": "Muzzarella, salsa de tomate, jamon cocido, huevo, tiras de morron rojo, oregano, olivas verdes",
+            "precio": 500,
+            "categoria": "principales"
+        },
+    
+
+        {
+            "id":6,
+            "nombre": "Flan c/ dulce de leche",
+            "imagen": "flan.jpg",
+            "ingredientes": "Porcion de flan con dulce de leche casero",
+            "precio": 150,
+            "categoria": "postres"
+        },
+        {
+            "id":7,
+            "nombre": "Ensalada de frutas",
+            "imagen": "frutas.jpg",
+            "ingredientes": "Mix de banana, manzana, frutillas, naranja, kiwi",
+            "precio": 180,
+            "categoria": "postres"
+        },
+        {
+            "id":8,
+            "nombre": "Copa helada",
+            "imagen": "helado.jpg",
+            "ingredientes": "Copa con bochas de helado sabor chocolate, dulce de leche granizado, tramontana",
+            "precio": 350,
+            "categoria": "postres"
+        },
+        {
+            "id":9,
+            "nombre": "Tarta de manzana",
+            "imagen": "tarta-manzana.jpg",
+            "ingredientes": "Porcion de tarta de manzana con una bocha de helado de vainilla",
+            "precio": 280,
+            "categoria": "postres"
+        },
+        {
+            "id":10,
+            "nombre": "Coca Cola",
+            "imagen": "coca.jpg",
+            "ingredientes": "Botella de Coca Cola de 500 ml",
+            "precio": 150,
+            "categoria": "bebidas"
+        },
+        {
+            "id":11,
+            "nombre": "Pepsi",
+            "imagen": "pepsi.jpg",
+            "ingredientes": "Botella de Pepsi de 500 ml",
+            "precio": 180,
+            "categoria": "bebidas"
+        },
+        {
+            "id":12,
+            "nombre": "Cerveza Brahama",
+            "imagen": "brahama.jpg",
+            "ingredientes": "Botella de cerveza Brahama de 970ml",
+            "precio": 350,
+            "categoria": "bebidas"
+        },
+        {
+            "id":13,
+            "nombre": "Vino tinto Toro Clasico",
+            "imagen": "vino.jpg",
+            "ingredientes": "Botella de Vino Tinto Toro Clasico 750 Cc",
+            "precio": 480,
+            "categoria": "bebidas"
+        }
+    ]
+    

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pattaya&family=KoHo:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Restó-Bar</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <nav class="menu-nav menu">
+                <a href="#">Inicio</a>
+                <a href="#ubicacion">Ubicación</a>
+                <a href="formulario.html">Ordenar</a>
+            </nav>
+
+            <div class="titulo">
+                <h1>Restó-Bar La Acadé</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Repudiandae sed ullam totam explicabo fugit, eos accus</p>
+            </div>
+        </div>
+    </header>
+
+<!-- Seccion de Imagen y Quienes Somos -->
+    <section class="main1">
+        <section class="presentacion">
+            <div class="contenedor">
+                <div class="foto-perfil">
+                    <img src="./img/pfil.jpg" alt="Imagen logo">
+                </div>
+                <div class="quienes-somos">
+                    <h3>Quienes Somos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Deleniti ullam soluta atque accusantium ratione voluptate necessitatibus cumque laborum velit fugiat.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container main">
+        <section class=" reseñas">
+            <div id="careouselReseñas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" id="reseñas">
+                        <img src="./img/reseñas/messi.jpg" class="d-block w-100 h-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Lionel Messi</h5>
+                              <p>"Despues de la copa America, este fue mi mejor premio, comer aqui en Locademia Restó."</p>
+                            </div>
+                      </div>
+                  <div class="carousel-item">
+                    <img src="./img/reseñas/dimaria.jpeg" class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Angel Di María</h5>
+                          <p>"Hermoso lugar para compartir con amigos una riquisima cena!"</p>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/reseñas/martitegui.jpg" class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>German Martitegui</h5>
+                          <p>"Un poco fria la comida pero supongo sera la primera y ultima vez que llegue fría, despues de eso, todo muy bien."</p>
+                        </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./img/reseñas/betular.jpg" class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Damian Betular</h5>
+                          <p>"Un lugar precioso, este corazón es para los que llevan este gran restó-bar adelante."</p>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" id="reseñas">
+                    <img src="./img/reseñas/messi.jpg" class="d-block w-100 h-25" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Lionel Messi</h5>
+                          <p>"Despues de la copa America, este fue mi mejor premio, comer aqui en Locademia Restó."</p>
+                        </div>
+                  </div>
+                  <div class="carousel-item" >
+                    <img src="./img/reseñas/dimaria.jpeg" class="d-block w-100 h-25" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Angel Di María/h5>
+                          <p>"Hermoso lugar para compartir con amigos una riquisima cena!"</p>
+                        </div>
+                  </div>
+                  <div class="carousel-item" >
+                    <img src="./img/reseñas/martitegui.jpg" class="d-block w-100 h-25" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>German Martitegui</h5>
+                          <p>"Un poco fria la comida pero supongo sera la primera y ultima vez que llegue fría, despues de eso, todo muy bien."</p>
+                        </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="./img/reseñas/betular.jpg" class="d-block w-100 h-25" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Damian Betular</h5>
+                          <p>"Un lugar precioso, este corazón es para los que llevan este gran restó-bar adelante."</p>
+                        </div>
+                  </div>
+                 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div> -->
+        </section>
+
+        
+        <!-- Seccion de Imagenes -->
+        <section class="galeria" id="galeria">
+			<div class="foto">
+				<img src="./img/muestra/1.jpg" alt="">
+			</div>
+			<div class="foto">
+				<img src="./img/muestra/2.jpg" alt="">
+			</div>
+			<div class="foto">
+				<img src="./img/muestra/3.jpg" alt="">
+			</div>
+			<div class="foto">
+				<img src="./img/muestra/4.jpg" alt="">
+			</div>
+			<div class="foto">
+				<img src="./img/muestra/5.jpg" alt="">
+			</div>
+			<div class="foto">
+				<img src="./img/muestra/6.jpg" alt="">
+			</div>
+			<div class="foto">
+				<img src="./img/muestra/7.jpg" alt="">
+			</div>
+			<div class="foto">
+				<img src="./img/muestra/8.jpg" alt="">
+			</div>
+		</section>
+
+
+        <!-- Seccion de la ubicacion del negocio con google maps -->
+        <section class="ubicacion-negocio" id="ubicacion">
+            <div class="contenedor">
+				<h3 class="titulo">DONDE ESTAMOS</h3>
+				<div class="direccion">
+					<p class="calle">San Martin esq Adolfo E Davila<br />Chilecito - La Rioja</p>
+					<p class="telefono">(3825) - 456789</p>
+					<p class="correo">restobar@lacade.com</p>
+				</div>
+				<div class="horarios">
+					<h4>Horarios</h4>
+					<p class="entre-semana">Lunes a Viernes<br />8:00am - 9:00pm</p>
+					<p class="fin-semana">Sabados y Domingos<br />11:00am - 11:00pm</p>
+				</div>
+			</div>
+            <section class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27871.95343961989!2d-67.4961696880128!3d-29.164843760682945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1638541391751!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        </section>
+    </section>
+
+
+    <footer class="my-5 py-5 text-muted text-center text-small bg-dark h-100">
+      <div class="row">
+          <div class="col">
+              <p class="mb-1">Derechos reservados - 2021</p>
+              <ul class="list-inline mt-3">
+                  <li class="list-inline-item"> 
+                      <a href="#">Privacidad</a>
+                  </li>
+          
+                  <li class="list-inline-item"> 
+                      <a href="#">Términos y Condiciones</a>
+                  </li>
+          
+                  <li class="list-inline-item"> 
+                      <a href="#">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col">
+              <ul class="list-inline">
+                  <li class="list-inline-item"> 
+                      <a href="#">Cuentas Corrientes</a>
+                  </li>
+          
+                  <li class="list-inline-item"> 
+                      <a href="#">Admin</a>
+                  </li>    
+              </ul>
+          </div>
+      </div>
+  </footer>
+
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Scripts locales -->
+    <script src="./js/clases.js"></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
